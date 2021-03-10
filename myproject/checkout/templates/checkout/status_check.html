@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <br>
+        <div class="text-center">
+            <h5><b>შეკვეთის ნომერი</b></h5>
+        </div>
+        <br>
+        <div class="status">
+            <input id="order-id" type="text" placeholder="ძებნა">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="{{ url_for('static',filename='js/status_check.js') }}"></script>
+{% endblock %}

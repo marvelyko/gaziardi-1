@@ -1,0 +1,52 @@
+{% from 'macro.html' import product %}
+{% extends 'base.html' %}
+{% block content %}
+    {% if bid and  bid.status == "pending" %}
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="center">
+                    <div class="alert alert-warning">თქვენი შეკვეთა ელოდება დადასტურებას</div>
+                    თუ თანხა ჯერ კიდევ არ გადაგირიცხავთ გთხოვთ გადარიცხოთ თანხა მითითებულ ანგარიშის ნომერზე<br>
+                    GE71TB7573536080100017<br>
+                    დანიშნულებაში მიუთითეთ შეკვეთის ნომერი
+                    <br><br>
+                    <b>შეკვეთის დეტალები</b><br>
+                    <b>შეკვეთის ნომერი: </b>{{ bid.id }}<br>
+                    <b>პროდუქტის დასახელება: </b>{{ bid.product.name }}<br>
+                    <b>რაოდენობა: </b>{{ bid.quantity }}<br>
+                    <b>ჯამური ღირებულება: </b>{{ bid.quantity * bid.product.price }} ლ<br>
+                </div>
+            </div>
+            <div class="col-*">
+                {{ product(bid.product) }}
+            </div><br>
+        </div>
+    {% elif bid and bid.status == "moving" %}
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="center">
+                    <div class="alert alert-success">თქვენი შეკვეთა დადასტურებულია</div>
+                    <br><br>
+                    <b>შეკვეთის დეტალები</b><br>
+                    <b>პროდუქტის დასახელება: </b>{{ bid.product.name }}<br>
+                    <b>რაოდენობა: </b>{{ bid.quantity }}<br>
+                    <b>ჯამური ღირებულება: </b>{{ bid.quantity * bid.product.price }} ლ<br>
+                </div>
+            </div>
+            <div class="col-*">
+                {{ product(bid.product) }}
+            </div><br>
+        </div>
+    {% else %}
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="center">
+                    <div class="alert alert-danger">შეკვეთა ასეთი ნომრით არ მოიძებნა</div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

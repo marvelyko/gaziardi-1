@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% block content %}
+        <!-- Checkout Start -->
+        <div class="checkout">
+            <div class="container-fluid"> 
+                <form method="POST">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="checkout-inner">
+                                <div class="billing-address">
+                                    <h2>Billing Address</h2>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>სახელი</label>
+                                            <input class="form-control" type="text" placeholder="სახელი" name="name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>გვარი</label>
+                                            <input class="form-control" type="text" placeholder="გვარი" name="surname" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>იმეილი</label>
+                                            <input class="form-control" type="text" placeholder="იმეილი" name="email" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ტელეფონი</label>
+                                            <input class="form-control" type="text" placeholder="ტელეფონი" name="phone" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>მისამართი</label>
+                                            <input class="form-control" type="text" placeholder="მისამართი" name="address" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ქვეყანა</label>
+                                            <select class="custom-select" name="country">
+                                                <option value="GE" selected>საქართველო</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ქალაქი</label>
+                                            <select class="custom-select" name="city">
+                                                <option value="tbilisi" selected>თბილისი</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div class="col-md-6">
+                                            <label>State</label>
+                                            <input class="form-control" type="text" placeholder="State">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ZIP Code</label>
+                                            <input class="form-control" type="text" placeholder="ZIP Code">
+                                        </div> -->
+                                        <div class="col-md-12">
+                                            <!-- <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="newaccount">
+                                                <label class="custom-control-label" for="newaccount">Create an account</label>
+                                            </div> -->
+                                        </div>
+                                        <!-- <div class="col-md-12">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="shipto">
+                                                <label class="custom-control-label" for="shipto">ალტერნატიული მისამართის მითითება</label>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+    
+                                <!-- <div class="shipping-address">
+                                    <h2>მისამართი</h2>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>სახელი</label>
+                                            <input class="form-control" type="text" placeholder="სახელი">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>გვარი</label>
+                                            <input class="form-control" type="text" placeholder="გვარი">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>იმეილი</label>
+                                            <input class="form-control" type="text" placeholder="იმეილი">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ტელეფონი</label>
+                                            <input class="form-control" type="text" placeholder="ტელეფონი">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label>მისამართი</label>
+                                            <input class="form-control" type="text" placeholder="მისამართი">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ქვეყანა</label>
+                                            <select class="custom-select">
+                                                <option selected>საქართველო</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>ქალაქი</label>
+                                            <input class="form-control" type="text" placeholder="ქალაქი">
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="checkout-inner">
+                                <div class="checkout-summary">
+                                    <h1>სულ:</h1>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <span>{{product.name}}</span>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="qtycheckout">
+                                                <span class="btn btn-minus"><i class="fa fa-minus"></i></span>
+                                                <input class="quantity" name="quantity" type="text">
+                                                <span class="btn btn-plus"><i class="fa fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span id="price">0 ლ</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="checkout-payment">
+                                    <div class="payment-methods">
+                                        <h1>გადახდის მეთოდი:</h1>
+                                        <div class="payment-method">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="payment-1" name="payment" disabled>
+                                                <label class="custom-control-label" for="payment-1">თბს ბანკი</label>
+                                            </div>
+                                            <div class="payment-content" id="payment-1-show">
+                                                <p>
+                                                    GE71TB7573536080100017
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="payment-2" name="payment" disabled>
+                                                <label class="custom-control-label" for="payment-2" disabled>საქართველოს ბანკი</label>
+                                            </div>
+                                            <div class="payment-content" id="payment-2-show">
+                                                <p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="payment-3" name="payment" value=3 checked>
+                                                <label class="custom-control-label" for="payment-3">თანხის გადარიცხვა</label>
+                                            </div>
+                                            <div class="payment-content" id="payment-2-show">
+                                                <p>
+                                                    დსლჯფ
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div class="checkout-btn">
+                                        <button type="submit" id="place-order">ყიდვა</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Checkout End -->
+{% endblock %}
+{% block scripts %}
+        <script type="text/javascript" src="{{url_for('static',filename='js/checkout.js')}}"></script>
+{% endblock %}
+
+{% block variables %}
+        <script type="text/javascript">
+            var price = {{product.price}};
+            var available = {{product.quantity}}-{{product.sold_quantity}};
+        </script>
+{% endblock %}

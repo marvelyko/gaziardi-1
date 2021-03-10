@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>გაზიარდი • Gaziardi</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="{{url_for('static',filename='img/logo.svg')}}" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='css/all.min.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='lib/slick/slick.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='lib/slick/slick-theme.css')}}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+         <!-- JS, Popper.js, and jQuery -->
+        <script src="{{url_for('static',filename='js/jquery-3.5.1.slim.min.js')}}"></script>
+        <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+        <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+        {% block variables %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="{{url_for('index.index')}}">
+                                <img src="{{url_for('static',filename='img/logo.svg')}}" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <form action="/search" method="GET">
+                                <input name="name" type="text" placeholder="ძებნა">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <div id="wishlist" class="btn wishlist">
+                                <i class="fa fa-heart"></i>
+                                <span id="wish-item-count"></span>
+                            </div>
+                            <a href="#" class="btn cart">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span id="cart-item-count"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav" id="nav-mb">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">მენიუ</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <div class="dropdown">
+                                <!-- <a href="index.html" class="nav-item nav-link active">Departments</a> -->
+                                <a href="#" class="dropdown-toggle nav-login" style="line-height: 38px;" data-toggle="dropdown">კატალოგი</a>
+
+                                <ul class="dropdown-menu mega-menu" style="margin-top: -2px;">
+
+                                    <li class="mega-menu-column">
+                                    <ul id="megamenu-ul">
+                                        <li class="nav-header">ჰიგიენის ნივთები</li>
+                                        <li><a href="product-list.html"></a></li>
+
+                                    </ul>
+                                    </li>
+
+                                    <li class="mega-menu-column">
+                                    <ul id="megamenu-ul">
+                                        <li class="nav-header">კოსმეტიკა</li>
+                                        <li><a href="product-list.html"></a></li>
+
+
+                                    </ul>
+                                    </li>
+
+                                    <li class="mega-menu-column">
+                                    <ul id="megamenu-ul">
+                                        <li class="nav-header">სურსათი</li>
+                                        <li><a href="product-list.html"></a></li>
+
+                                    </ul>
+                                    </li>
+                                    <li class="mega-menu-column">
+                                    <ul id="megamenu-ul">
+                                        <li class="nav-header">ჯანმრთელობა</li>
+                                        <li><a href="product-list.html"></a></li>
+
+                                    </ul>
+                                    </li>
+                                    <li class="mega-menu-column">
+                                    <ul id="megamenu-ul">
+                                        <li class="nav-header">ქველმოქმედება</li>
+                                        <li><a href="product-list.html"></a></li>
+
+
+                                    </ul>
+                                    </li>
+
+                                </ul><!-- dropdown-menu -->
+
+                            </div><!-- /.dropdown -->
+                            <a href="{{ url_for('category.hygiene') }}" class="nav-item nav-link">ჰიგიენის ნივთები</a>
+                            <a href="{{ url_for('category.beauty') }}" class="nav-item nav-link">კოსმეტიკა</a>
+                            <a href="{{url_for('category.grocery')}}" class="nav-item nav-link">სურსათი</a>
+                            <a href="{{url_for('category.health')}}" class="nav-item nav-link">ჯანმრთელობა</a>
+                            <a href="{{url_for('category.charity')}}" class="nav-item nav-link">ქველმოქმედება</a>
+                            <a href="{{url_for('checkout.status_check')}}" class="nav-item nav-link">შეკვეთის შემოწმება</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-login" style="line-height: 38px;" data-toggle="dropdown">მეტი</a>
+                                <div class="dropdown-menu" id="nav-drpdwn" style="margin-top: -2px;">
+                                    <a href="/contact" class="dropdown-item">კონტაქტი</a>
+                                    <a href="#" class="dropdown-item">ჩვენ შესახებ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% if current_user.is_authenticated %}
+
+                        <!-- <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-login" data-toggle="dropdown">
+                                    <img class="user-main-img" src="img/karlo.jpg" alt="profile picture">
+                                    {{current_user.name}}
+                                </a>
+                                <div class="dropdown-menu" id="nav-drpdwn">
+                                    <a href="my-account.html" class="dropdown-item">პროფილი</a>
+                                    <a href="messagebox.html" class="dropdown-item">წერილები</a>
+                                    <a href="/logout" class="dropdown-item">გასვლა</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        {% else %}
+
+                        <!-- <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="dropdown-toggle nav-login" data-toggle="dropdown">მომხმარებელი</a>
+                                <div class="dropdown-menu" id="nav-drpdwn">
+                                    <a href="/register" class="dropdown-item">შესვლა</a>
+                                    <a href="/register" class="dropdown-item">რეგისტრაცია</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        {% endif %}
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        <div class="main">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>კონტაქტი</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>თბილისი, დიდი დიღომი</p>
+                                <p><i class="fa fa-envelope"></i>Gaziardi.Ltd@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>+995-597-11-81-75</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>გამოიწერეთ:</h2>
+                            <div class="contact-info">
+                                <div class="social">
+{#                                    <a href=""><i class="fab fa-twitter"></i></a>#}
+                                    <a href="https://www.facebook.com/Gaziardi.ge" target="_blank"><i class="fab fa-facebook-f"></i></a>
+{#                                    <a href=""><i class="fab fa-linkedin-in"></i></a>#}
+{#                                    <a href=""><i class="fab fa-instagram"></i></a>#}
+{#                                    <a href=""><i class="fab fa-youtube"></i></a>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>კომპანია</h2>
+                            <ul>
+                                <li><a href="#">ჩვენ შესახებ</a></li>
+                                <li><a href="#">კონფიდენციალურობის პოლიტიკა</a></li>
+                                <li><a href="#">პირობები</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>შეკვეთის გაკეთება</h2>
+                            <ul>
+                                <li><a href="#">გადახდის პოლიტიკა</a></li>
+                                <li><a href="#">მიტანის სერვისი</a></li>
+                                <li><a href="#">დაბრუნების სერვისი</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>გადახდის მეთოდები:</h2>
+                            <img src="{{url_for('static',filename='img/payment-method.png')}}" alt="Payment Method" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>უსაფრთხოება:</h2>
+                            <img src="{{url_for('static',filename='img/ssl.svg')}}" alt="Payment Security" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+        <!-- Back to Top -->
+{#        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>#}
+
+        <!-- JavaScript Libraries -->
+        <script src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
+        <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>
+        <script src="{{url_for('static',filename='lib/slick/slick.min.js')}}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{{url_for('static',filename='js/main.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/megamenu.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/script.js')}}"></script>
+        {% block scripts%}
+        {% endblock %}
+    </body>
+</html>
