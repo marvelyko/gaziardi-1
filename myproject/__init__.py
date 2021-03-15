@@ -61,7 +61,7 @@ from myproject.contact.views import contact_blueprint
 from myproject.search.views import search_blueprint
 
 app.register_blueprint(auth_blueprint,url_prefix="/")
-app.register_blueprint(admin_blueprint,url_prefix="/adm912EC803B2CE49E4A541068D495AB570")
+app.register_blueprint(admin_blueprint,url_prefix="/admin")
 app.register_blueprint(index_blueprint,url_prefix="/")
 app.register_blueprint(category_blueprint,url_prefix="/category")
 app.register_blueprint(product_blueprint,url_prefix="/product")
