@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="menu-blacklist" transform="translate(-141 -296)">
+    <g id="user" transform="translate(141 296)">
+      <g id="user-2" data-name="user" transform="translate(0)" opacity="0.8">
+        <g id="Group_7" data-name="Group 7">
+          <path id="Path_5" data-name="Path 5" d="M15.76,13.539a.617.617,0,0,0-1.208.252.645.645,0,0,1-.131.541.627.627,0,0,1-.494.235H1.873a.627.627,0,0,1-.494-.235.645.645,0,0,1-.131-.541,6.819,6.819,0,0,1,6.488-5.4q.081,0,.164,0t.164,0A6.79,6.79,0,0,1,13.548,11.4a.617.617,0,1,0,1.025-.687,8.028,8.028,0,0,0-4.16-3.161,4.2,4.2,0,1,0-5.024,0A8.028,8.028,0,0,0,.04,13.539,1.875,1.875,0,0,0,1.873,15.8H13.927a1.875,1.875,0,0,0,1.833-2.261ZM4.938,4.2A2.963,2.963,0,1,1,8.05,7.156h-.3A2.966,2.966,0,0,1,4.938,4.2Z" transform="translate(0)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(149 304)" stroke="#000" stroke-width="1">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="4.5" fill="none"/>
+    </g>
+    <line id="Line_28" data-name="Line 28" x2="6" transform="translate(151 309)" fill="none" stroke="#d8efef" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+  <g id="menu-group" transform="translate(-335 -5886)">
+    <g id="baseline-person-24px" transform="translate(336 5886)">
+      <path id="Path_2203" data-name="Path 2203" d="M8,8A2,2,0,1,0,6,6,2,2,0,0,0,8,8ZM8,9c-1.335,0-4,.67-4,2v1h8V11C12,9.67,9.335,9,8,9Z" transform="translate(1 1)"/>
+      <path id="Path_2204" data-name="Path 2204" d="M0,0H18V18H0Z" fill="none"/>
+    </g>
+    <g id="baseline-person-24px-2" data-name="baseline-person-24px" transform="translate(345 5887)">
+      <path id="Path_2203-2" data-name="Path 2203" d="M7,7A1.5,1.5,0,1,0,5.5,5.5,1.5,1.5,0,0,0,7,7Zm0,.75c-1,0-3,.5-3,1.5V10h6V9.25C10,8.253,8,7.75,7,7.75Z" transform="translate(-2 -2)"/>
+      <path id="Path_2204-2" data-name="Path 2204" d="M0,0H10V10H0Z" fill="none"/>
+    </g>
+    <g id="baseline-person-24px-3" data-name="baseline-person-24px" transform="translate(335 5887)">
+      <path id="Path_2203-3" data-name="Path 2203" d="M7,7A1.5,1.5,0,1,0,5.5,5.5,1.5,1.5,0,0,0,7,7Zm0,.75c-1,0-3,.5-3,1.5V10h6V9.25C10,8.253,8,7.75,7,7.75Z" transform="translate(-2 -2)"/>
+      <path id="Path_2204-3" data-name="Path 2204" d="M0,0H10V10H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

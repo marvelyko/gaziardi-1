@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="123.423" viewBox="0 0 100 123.423">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_30" data-name="Rectangle 30" width="100" height="123.423" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_547" data-name="Group 547" transform="translate(-633 -317)">
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(633 317)" clip-path="url(#clip-path)">
+      <path id="Path_15" data-name="Path 15" d="M2305.514,634.572l-33.266,18.572a13.36,13.36,0,0,0-3.494,3.638,10.118,10.118,0,0,0-.765,4.936v47.45s-.3,3.161.765,5.052a12.2,12.2,0,0,0,3.494,3.446l41.354,19.814a9.834,9.834,0,0,0,4.362,1.113,8.082,8.082,0,0,0,4.082-1.113l40.333-19.814s3.674-1.694,4.595-3.446a14.211,14.211,0,0,0,.958-5.052V661.718a9.618,9.618,0,0,0-.958-4.937c-1.195-1.941-4.595-3.637-4.595-3.637L2330.4,634.572l2.3-12s.383-1.085-.382-1.468-1.52.575-1.52.575l-6.522,5.616-5.235-10.431s-1.057-1.735-1.722-1.7-1.467,1.7-1.467,1.7l-4.6,10.431-6.811-5.9s-.91-.517-1.293-.293-.439,1.159-.439,1.159Z" transform="translate(-2267.949 -615.17)" fill="#fff"/>
+      <text id="გ" transform="translate(28.5 91.711)" fill="#009797" font-size="75" font-family="ALKDots, ALK Dots"><tspan x="0" y="0">გ</tspan></text>
+    </g>
+  </g>
+</svg>

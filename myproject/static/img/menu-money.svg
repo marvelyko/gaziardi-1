@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+  <g id="menu-money" transform="translate(-142 -389)">
+    <g id="Rectangle_294" data-name="Rectangle 294" transform="translate(142 389)" fill="none" stroke="#707070" stroke-width="1">
+      <path d="M2,0H7A0,0,0,0,1,7,0V5A0,0,0,0,1,7,5H0A0,0,0,0,1,0,5V2A2,2,0,0,1,2,0Z" stroke="none"/>
+      <path d="M2,.5H6a.5.5,0,0,1,.5.5V4a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,4V2A1.5,1.5,0,0,1,2,.5Z" fill="none"/>
+    </g>
+    <g id="Rectangle_295" data-name="Rectangle 295" transform="translate(150 389)" fill="none" stroke="#707070" stroke-width="1">
+      <path d="M0,0H8a2,2,0,0,1,2,2V5a0,0,0,0,1,0,0H0A0,0,0,0,1,0,5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M1,.5H8A1.5,1.5,0,0,1,9.5,2V4a.5.5,0,0,1-.5.5H1A.5.5,0,0,1,.5,4V1A.5.5,0,0,1,1,.5Z" fill="none"/>
+    </g>
+    <g id="Path_6364" data-name="Path 6364" transform="translate(142 395)" fill="none">
+      <path d="M0,0H18V6a2,2,0,0,1-2,2H2A2,2,0,0,1,0,6Z" stroke="none"/>
+      <path d="M 1 1 L 1 6 C 1 6.551400184631348 1.448600769042969 7 2 7 L 16 7 C 16.55139923095703 7 17 6.551400184631348 17 6 L 17 1 L 13.31389999389648 1 L 1 1 M 0 0 L 13.31389999389648 0 L 18 0 L 18 6 C 18 7.104569911956787 17.10457038879395 8 16 8 L 2 8 C 0.8954296112060547 8 0 7.104569911956787 0 6 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>

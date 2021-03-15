@@ -14,57 +14,158 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
-        <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
-        <link href="{{url_for('static',filename='css/all.min.css')}}" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="{{url_for('static',filename='lib/slick/slick.css')}}" rel="stylesheet">
         <link href="{{url_for('static',filename='lib/slick/slick-theme.css')}}" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
-         <!-- JS, Popper.js, and jQuery -->
-        <script src="{{url_for('static',filename='js/jquery-3.5.1.slim.min.js')}}"></script>
-        <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
-        <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/reset.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/fonts.css')}}">
+
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         {% block variables %}
         {% endblock %}
     </head>
 
     <body>
-        <!-- Bottom Bar Start -->
-        <div class="bottom-bar">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-3">
-                        <div class="logo">
-                            <a href="{{url_for('index.index')}}">
-                                <img src="{{url_for('static',filename='img/logo.svg')}}" alt="Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="search">
-                            <form action="/search" method="GET">
-                                <input name="name" type="text" placeholder="ძებნა">
-                                <button><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="user">
-                            <div id="wishlist" class="btn wishlist">
-                                <i class="fa fa-heart"></i>
-                                <span id="wish-item-count"></span>
-                            </div>
-                            <a href="#" class="btn cart">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span id="cart-item-count"></span>
-                            </a>
-                        </div>
-                    </div>
+        <div class="main-header">
+                <a href="{{url_for('index.index')}}">
+                    <img class="logo" src="{{url_for('static',filename='img/logo.svg')}}">
+                </a>
+
+                <div class="search-field">
+                    <input type="text" name="search" autocomplete="off">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
                 </div>
+
+                <div class="user-tools">
+                    <a href="#" id="myBtn" class="create-logo">
+                        <img src="{{url_for('static',filename='img/create.svg')}}">
+                        <p>შექმნა</p>
+                    </a>
+
+                    <div id="myModal" class="modal">
+
+                        <div class="crt-box-post">
+                            <div class="modal-content-close">
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="createoffer">
+                                <a href="add-offer.html">
+                                    <div class="typeoffer">
+                                        <p>გაყიდვა</p>
+                                    </div>
+                                </a>
+                                <a href="add-offer.html">
+                                    <div class="typeoffer">
+                                        <p>გაქირავება</p>
+                                    </div>
+                                </a>
+                                <a href="add-offer.html">
+                                    <div class="typeoffer">
+                                        <p>მომსახურება</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#" id="myloginBtn" class="create-logo">
+                        <img src="{{url_for('static',filename='img/user.svg')}}">
+                        <p>შესვლა</p>
+                    </a>
+
+                    <!-- <a href="#" id="" class="create-logo">
+                        <img src="assets/images/user.svg">
+                        <p>შესვლა</p>
+                        <div>
+                            <p>0</p>
+                        </div>
+                    </a> -->
+
+                    <div id="myloginModal" class="modallogin">
+                        <div class="container-regi" id="container">
+                            <div class="form-container sign-up-container">
+                                <form class="regist-form" action="#">
+                                    <h1>რეგისტრაცია</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    </div>
+                                    <span>ან შექმენით დამოუკიდებელი ანგარიში</span>
+                                    <input type="text" placeholder="სახელი" />
+                                    <input type="email" placeholder="ელ. ფოსტა" />
+                                    <input type="password" placeholder="პაროლი" />
+                                    <button>რეგისტრაცია</button>
+                                </form>
+                            </div>
+                            <div class="form-container sign-in-container">
+                                <form class="regist-form" action="#">
+                                    <h1>შესვლა</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    </div>
+                                    <span>ან გამოიყენეთ თქვენი ანგარიში</span>
+                                    <input type="email" placeholder="ელ. ფოსტა" />
+                                    <input type="password" placeholder="პაროლი" />
+                                    <a href="#">დაგავიწყდათ პაროლი?</a>
+                                    <button>შესვლა</button>
+                                </form>
+                            </div>
+                            <div class="overlay-container">
+                                <div class="overlay">
+                                    <div class="overlay-panel overlay-left">
+                                        <img src="{{url_for('static',filename='img/main-logo.svg')}}">
+                                        <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                        <button class="ghost" id="signIn">შესვლა</button>
+                                    </div>
+                                    <div class="overlay-panel overlay-right">
+                                        <img src="{{url_for('static',filename='img/main-logo.svg')}}">
+                                        <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                        <button class="ghost" id="signUp">რეგისტრაცია</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <a href="userprofile.html" class="create-logo">
+                        <img src="assets/images/sms.svg">
+                        <p>შეტყობინება</p>
+                        <div id="message">
+                            <p>0</p>
+                        </div>
+                    </a>
+                    <a href="userprofile.html" class="create-logo">
+                        <img src="assets/images/list.svg">
+                        <p>ჩემი სია</p>
+                        <div>
+                            <p>0</p>
+                        </div>
+                    </a> -->
+                    <a href="cart.html" class="create-logo">
+                        <img src="{{url_for('static',filename='img/cart.svg')}}">
+                        <div>
+                            <p>0</p>
+                        </div>
+                        <p>კალათა</p>
+                    </a>
+                </div>
+
             </div>
-        </div>
-        <!-- Bottom Bar End -->
+
 
         <!-- Nav Bar Start -->
         <div class="nav" id="nav-mb">
@@ -180,101 +281,81 @@
             {% endblock %}
         </div>
         <!-- Footer Start -->
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>კონტაქტი</h2>
-                            <div class="contact-info">
-                                <p><i class="fa fa-map-marker"></i>თბილისი, დიდი დიღომი</p>
-                                <p><i class="fa fa-envelope"></i>Gaziardi.Ltd@gmail.com</p>
-                                <p><i class="fa fa-phone"></i>+995-597-11-81-75</p>
-                            </div>
+        <footer>
+                <div class="footer">
+                        <div class="contain">
+                        <div class="col">
+                                <h3>გაზიარდი</h3>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>გამოიწერეთ:</h2>
-                            <div class="contact-info">
-                                <div class="social">
-{#                                    <a href=""><i class="fab fa-twitter"></i></a>#}
-                                    <a href="https://www.facebook.com/Gaziardi.ge" target="_blank"><i class="fab fa-facebook-f"></i></a>
-{#                                    <a href=""><i class="fab fa-linkedin-in"></i></a>#}
-{#                                    <a href=""><i class="fab fa-instagram"></i></a>#}
-{#                                    <a href=""><i class="fab fa-youtube"></i></a>#}
+                        <div class="col">
+                                <h3>კატეგორიები</h3>
+                                <ul>
+                                        <a href="#"><li>გაყიდვა</li></a>
+                                        <a href="#"><li>გაქირავება</li></a>
+                                        <a href="#"><li>მომსახურება</li></a>
+                                </ul>
+                        </div>
+                        <div class="col">
+                                <h3>დახმარება</h3>
+                                <ul>
+                                        <a href="FAQ.html"><li>მხარდაჭერა</li></a>
+                                        <a href="FAQ.html"><li>FAQ</li></a>
+                                </ul>
+                        </div>
+                        <div class="col">
+                                <h3>კომპანია</h3>
+                                <ul>
+                                        <a href="aboutus.html"><li>ჩვენი გუნდი</li></a>
+                                        <a href="aboutus.html"><li>შესახებ</li></a>
+                                        <a href="aboutus.html"><li>კონტაქტი</li></a>
+                                        <a href="aboutus.html"><li>მოგვწერეთ</li></a>
+                                </ul>
+                        </div>
+                        <div class="col social">
+                                <h3>გამოგვყევით</h3>
+                                <ul>
+                                        <a href="www.facebook.com"><li><img src="{{url_for('static',filename='img/Facebook.svg')}}" alt="facebook"></li></a>
+                                        <a href="www.instagram.com"><li><img src="{{url_for('static',filename='img/instagram.svg')}}" alt="instagram"></li></a>
+                                        <a href="www.twitter.com"><li><img src="{{url_for('static',filename='img/twitter.svg')}}" alt="twitter"></li></a>
+                                </ul>
+                                <div class="subscribe-field">
+                                    <input type="text" autocomplete="off" placeholder="გამოიწერე" name="subscribe">
+                                    <a href="#">
+                                        <img src="{{url_for('static',filename='img/send-mail.svg')}}">
+                                    </a>
                                 </div>
-                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>კომპანია</h2>
-                            <ul>
-                                <li><a href="#">ჩვენ შესახებ</a></li>
-                                <li><a href="#">კონფიდენციალურობის პოლიტიკა</a></li>
-                                <li><a href="#">პირობები</a></li>
-                            </ul>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h2>შეკვეთის გაკეთება</h2>
-                            <ul>
-                                <li><a href="#">გადახდის პოლიტიკა</a></li>
-                                <li><a href="#">მიტანის სერვისი</a></li>
-                                <li><a href="#">დაბრუნების სერვისი</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="row payment align-items-center">
-                    <div class="col-md-6">
-                        <div class="payment-method">
-                            <h2>გადახდის მეთოდები:</h2>
-                            <img src="{{url_for('static',filename='img/payment-method.png')}}" alt="Payment Method" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="payment-security">
-                            <h2>უსაფრთხოება:</h2>
-                            <img src="{{url_for('static',filename='img/ssl.svg')}}" alt="Payment Security" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <hr>
+                <div class="copyright">Copyright © 2010-2020 Freepik Company S.L. All rights reserved.</div>
+    </footer>
         <!-- Footer End -->
 
-        <!-- Footer Bottom Start -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 copyright">
-                        <p>Copyright All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Bottom End -->
 
-        <!-- Back to Top -->
-{#        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>#}
 
+{#        <!-- JavaScript Libraries -->#}
+{#        <script src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>#}
+{#        <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>#}
+{#        <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>#}
+{#        <script src="{{url_for('static',filename='lib/slick/slick.min.js')}}"></script>#}
+{##}
+{#        <!-- Template Javascript -->#}
+{#        <script src="{{url_for('static',filename='js/main.js')}}"></script>#}
+{#        <script type="text/javascript" src="{{url_for('static',filename='js/megamenu.js')}}"></script>#}
+{#        <script type="text/javascript" src="{{url_for('static',filename='js/script.js')}}"></script>#}
+{#        #}
         <!-- JavaScript Libraries -->
-        <script src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
-        <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/addoffer.js')}}"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="{{url_for('static',filename='lib/easing/easing.min.js')}}"></script>
         <script src="{{url_for('static',filename='lib/slick/slick.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/registr.js')}}"></script>
 
         <!-- Template Javascript -->
         <script src="{{url_for('static',filename='js/main.js')}}"></script>
         <script type="text/javascript" src="{{url_for('static',filename='js/megamenu.js')}}"></script>
-        <script type="text/javascript" src="{{url_for('static',filename='js/script.js')}}"></script>
         {% block scripts%}
         {% endblock %}
     </body>

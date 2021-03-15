@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.415" height="24.415" viewBox="0 0 24.415 24.415">
+  <g id="menu-settings" transform="translate(0 0.419) rotate(-1)">
+    <g id="Bounding_Boxes">
+      <path id="Path_2999" data-name="Path 2999" d="M0,0H24V24H0Z" fill="none"/>
+    </g>
+    <g id="Outline_1_">
+      <g id="Group_249" data-name="Group 249">
+        <path id="Path_3000" data-name="Path 3000" d="M20,8.69V4H15.31L12,.69,8.69,4H4V8.69L.69,12,4,15.31V20H8.69L12,23.31,15.31,20H20V15.31L23.31,12Zm-2,5.79V18H14.48L12,20.48,9.52,18H6V14.48L3.52,12,6,9.52V6H9.52L12,3.52,14.48,6H18V9.52L20.48,12Z"/>
+        <path id="Path_3001" data-name="Path 3001" d="M12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

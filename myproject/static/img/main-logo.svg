@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360.642" height="79.9" viewBox="0 0 360.642 79.9">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_217" data-name="Rectangle 217" width="360.642" height="79.9" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+    <g id="Group_47" data-name="Group 47" transform="translate(0 0.001)">
+      <text id="აზიარდი" transform="translate(67.641 60.113)" fill="#009797" font-size="50" font-family="ALKDots, ALK Dots"><tspan x="0" y="0">აზიარდი</tspan></text>
+      <path id="Path_13" data-name="Path 13" d="M4.625.116S4.677,0,4.776,0s.163.13.163.13L9.453,8.307a.11.11,0,0,1-.1.163H.11a.11.11,0,0,1-.1-.163Z" transform="translate(32.633 2.336) rotate(12.007)" fill="#0b85c0"/>
+      <path id="Path_14" data-name="Path 14" d="M4.625.116S4.677,0,4.776,0s.163.13.163.13L9.453,8.307a.11.11,0,0,1-.1.163H.11a.11.11,0,0,1-.1-.163Z" transform="translate(22.703 4.304) rotate(-12.007)" fill="#0b85c0"/>
+      <path id="Path_15" data-name="Path 15" d="M2292.267,627.73l-21.535,12.023a8.648,8.648,0,0,0-2.262,2.354,6.545,6.545,0,0,0-.5,3.2V676.02a6.778,6.778,0,0,0,.5,3.27,7.9,7.9,0,0,0,2.262,2.231l26.771,12.827a6.36,6.36,0,0,0,2.824.721,5.239,5.239,0,0,0,2.643-.721l26.11-12.827s2.378-1.1,2.974-2.231a9.183,9.183,0,0,0,.619-3.27V645.3a6.223,6.223,0,0,0-.619-3.2,8.9,8.9,0,0,0-2.974-2.355l-20.7-12.023,1.487-7.767s.248-.7-.247-.95-.984.372-.984.372l-4.221,3.635-3.389-6.752s-.685-1.123-1.115-1.1-.95,1.1-.95,1.1l-2.975,6.752-4.41-3.818s-.589-.334-.837-.19-.283.75-.283.75Z" transform="translate(-2267.95 -615.17)" fill="#009797"/>
+      <text id="გ" transform="translate(18.381 58.949)" fill="#fff" font-size="49" font-family="ALKDots, ALK Dots"><tspan x="0" y="0">გ</tspan></text>
+    </g>
+  </g>
+</svg>
