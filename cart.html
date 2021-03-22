@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GAAZIARE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="eCommerce HTML Template Free Download" name="keywords">
+    <meta content="eCommerce HTML Template Free Download" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- <div class="info-head">
+            <div class="num-gmail">
+                <img src="assets/images/phone.svg">
+                <p>+995-597-11-81-75</p>
+                <img src="assets/images/gmail.svg">
+                <p>Gaziardi.ltd@gmail.com</p>
+            </div>
+            <div class="head-login">
+                <img src="assets/images/avatar.svg">
+                <a href="#"><p>შესვლა</p></a>
+                <div class="divideline"></div>
+                <a href="#"><p>რეგისტრაცია</p></a>
+                <div class="flag">
+                    <img src="">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="main-header">
+            <div class="logoandsearch">
+                <a href="index.html">          
+                    <img class="logo" src="assets/images/logo.svg">
+                </a>         
+                
+                <div class="search-field">
+                    <input type="text" name="search">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="user-tools">
+                <a href="#" id="myBtn" class="create-logo">
+                    <img src="assets/images/create.svg">
+                    <p>შექმნა</p>
+                </a>
+
+                <div id="myModal" class="modal">
+
+                    <div class="crt-box-post">
+                        <div class="modal-content-close">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="createoffer">
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაყიდვა</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაქირავება</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>მომსახურება</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" id="myloginBtn" class="create-logo">
+                    <img src="assets/images/user.svg">
+                    <p>შესვლა</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+
+                <div id="myloginModal" class="modallogin">
+                    <div class="container-regi" id="container">
+                        <div class="form-container sign-up-container">
+                            <form class="regist-form" action="#">
+                                <h1>რეგისტრაცია</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან შექმენით დამოუკიდებელი ანგარიში</span>
+                                <input type="text" placeholder="სახელი" />
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <button>რეგისტრაცია</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="regist-form" action="#">
+                                <h1>შესვლა</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან გამოიყენეთ თქვენი ანგარიში</span>
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <a href="#">დაგავიწყდათ პაროლი?</a>
+                                <button>შესვლა</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signIn">შესვლა</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signUp">რეგისტრაცია</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/sms.svg">
+                    <p>შეტყობინება</p>
+                    <div id="message">
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/list.svg">
+                    <p>ჩემი სია</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="#" class="create-logo">
+                    <img src="assets/images/cart.svg">
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <p>კალათა</p>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Cart Start -->
+    <div class="cart-page">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-lg-8">
+                    <div class="cart-page-inner">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>პროდუქტი</th>
+                                        <th>შესავსებად</th>
+                                        <th>ფასი</th>
+                                        <th>რაოდენობა</th>
+                                        <th>ჯამი</th>
+                                        <th>წაშლა</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-middle">
+                                    <tr>
+                                        <td>
+                                            <div class="img">
+                                                <a href="#"><img src="assets/images/logo.svg" alt="Image"></a>
+                                                <p>პროდუქტის სახელი</p>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn-cart">200კგ</button></td>
+                                        <td>₾99</td>
+                                        <td>
+                                            <div class="qty">
+                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                <input type="text" value="1">
+                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>₾99</td>
+                                        <td><button><i class="fa fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="img">
+                                                <a href="#"><img src="assets/images/logo.svg" alt="Image"></a>
+                                                <p>პროდუქტის სახელი</p>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn-cart">200კგ</button></td>
+                                        <td>₾99</td>
+                                        <td>
+                                            <div class="qty">
+                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                <input type="text" value="1">
+                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>₾99</td>
+                                        <td><button><i class="fa fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="img">
+                                                <a href="#"><img src="assets/images/logo.svg" alt="Image"></a>
+                                                <p>პროდუქტის სახელი</p>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn-cart">200კგ</button></td>
+                                        <td>₾99</td>
+                                        <td>
+                                            <div class="qty">
+                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                <input type="text" value="1">
+                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>₾99</td>
+                                        <td><button><i class="fa fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="img">
+                                                <a href="#"><img src="assets/images/logo.svg" alt="Image"></a>
+                                                <p>პროდუქტის სახელი</p>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn-cart">200კგ</button></td>
+                                        <td>₾99</td>
+                                        <td>
+                                            <div class="qty">
+                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                <input type="text" value="1">
+                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>₾99</td>
+                                        <td><button><i class="fa fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="img">
+                                                <a href="#"><img src="assets/images/logo.svg" alt="Image"></a>
+                                                <p>პროდუქტის სახელი</p>
+                                            </div>
+                                        </td>
+                                        <td><button class="btn-cart">200კგ</button></td>
+                                        <td>₾99</td>
+                                        <td>
+                                            <div class="qty">
+                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                                <input type="text" value="1">
+                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>₾99</td>
+                                        <td><button><i class="fa fa-trash"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart-page-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="coupon">
+                                    <input type="text" placeholder="პრომო კოდი">
+                                    <button>დადასტურება</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="cart-summary">
+                                    <div class="cart-content">
+                                        <h1>შეკვეთის შეჯამება</h1>
+                                        <p>პროდუქციის ჯამი<span>₾99</span></p>
+                                        <p>ტრანსპორტირება<span>₾1</span></p>
+                                        <h2>სულ<span>₾100</span></h2>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <button>დამატება</button>
+                                        <button>შეკვეთა</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart End -->
+    
+    <footer>
+        <div class="footer">
+                <div class="contain">
+                <div class="col">
+                        <h3>გაზიარდი</h3>
+                </div>
+                <div class="col">
+                        <h3>კატეგორიები</h3>
+                        <ul>
+                                <a href="categories.html"><li>გაყიდვა</li></a>
+                                <a href="pubg-championship.html"><li>გაქირავება</li></a>
+                                <a href="matches.html"><li>მომსახურება</li></a>
+                        </ul>
+                </div>
+                <div class="col">
+                        <h3>დახმარება</h3>
+                        <ul>
+                                <li>მხარდაჭერა</li>
+                                <li>FAQ</li>
+                        </ul>
+                </div>
+                <div class="col">
+                        <h3>კომპანია</h3>
+                        <ul>
+                                <li>ჩვენი გუნდი</li>
+                                <li>შესახებ</li>
+                                <li>კონტაქტი</li>
+                                <li>მოგვწერეთ</li>
+                        </ul>
+                </div>
+                <div class="col social">
+                        <h3>გამოგვყევით</h3>
+                        <ul>
+                                <a href="www.facebook.com"><li><img src="assets/images/Facebook.svg" alt="facebook"></li></a>
+                                <a href="www.instagram.com"><li><img src="assets/images/instagram.svg" alt="instagram"></li></a>
+                                <a href="www.twitter.com"><li><img src="assets/images/twitter.svg" alt="twitter"></li></a>
+                        </ul>
+                        <div class="subscribe-field">
+                            <input type="text" autocomplete="off" placeholder="გამოიწერე" name="subscribe">
+                            <a href="#">
+                                <img src="assets/images/send-mail.svg">
+                            </a>
+                        </div>
+                </div>
+                </div>
+        </div>
+        <hr>
+        <div class="copyright">Copyright © 2010-2020 Freepik Company S.L. All rights reserved.</div>
+    </footer>
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/addoffer.js"></script>
+    <script type="text/javascript" src="assets/js/registr.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

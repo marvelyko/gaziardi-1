@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+      body{
+  background-color: #009797;
+  height: 100vh;
+  overflow: hidden;
+}
+.loader{
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.loader-cont{
+  width: 300px;
+}
+.fix-logo{
+  display:inline-block; 
+  height: 68px;
+}
+.vertical{
+  height: 50px;
+  animation: upup 2s linear infinite 0s;
+  -ms-animation: upup 2s linear infinite 0s;
+  -webkit-animation: upup 2s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+@-webkit-keyframes upup{
+  0% { opacity: 0; }
+  25% { opacity: 0; -webkit-transform: translateY(45px); }
+  50% { opacity: 1; -webkit-transform: translateY(0px); }
+  75% { opacity: 0; -webkit-transform: translateY(-30px); }
+  100% { opacity: 0; }
+}
+    </style>
+</head>
+<body>
+    
+      <div class="loader">
+        <div class="loader-cont">
+        <img class="fix-logo" src="assets/images/loading-logo.svg" alt="">
+        <img class="vertical" src="assets/images/აზიარდი.svg" alt="">
+        </div>
+      </div>         
+    
+    </body>
+</html>

@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="E-commerce">
+    <meta property="og:title" content="Gaziardi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Gaziardi.com"/>
+    <meta property="og:image" content="">
+    <meta property="og:description" content="" />
+    <title>Gaziardi</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- <div class="info-head">
+            <div class="num-gmail">
+                <img src="assets/images/phone.svg">
+                <p>+995-597-11-81-75</p>
+                <img src="assets/images/gmail.svg">
+                <p>Gaziardi.ltd@gmail.com</p>
+            </div>
+            <div class="head-login">
+                <img src="assets/images/avatar.svg">
+                <a href="#"><p>შესვლა</p></a>
+                <div class="divideline"></div>
+                <a href="#"><p>რეგისტრაცია</p></a>
+                <div class="flag">
+                    <img src="">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="main-header">
+            <div class="logoandsearch">
+                <a href="index.html">          
+                    <img class="logo" src="assets/images/logo.svg">
+                </a>         
+                
+                <div class="search-field">
+                    <input type="text" name="search">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="user-tools">
+                <a href="#" id="myBtn" class="create-logo">
+                    <img src="assets/images/create.svg">
+                    <p>შექმნა</p>
+                </a>
+
+                <div id="myModal" class="modal">
+
+                    <div class="crt-box-post">
+                        <div class="modal-content-close">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="createoffer">
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაყიდვა</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაქირავება</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>მომსახურება</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" id="myloginBtn" class="create-logo">
+                    <img src="assets/images/user.svg">
+                    <p>შესვლა</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+
+                <div id="myloginModal" class="modallogin">
+                    <div class="container-regi" id="container">
+                        <div class="form-container sign-up-container">
+                            <form class="regist-form" action="#">
+                                <h1>რეგისტრაცია</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან შექმენით დამოუკიდებელი ანგარიში</span>
+                                <input type="text" placeholder="სახელი" />
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <button>რეგისტრაცია</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="regist-form" action="#">
+                                <h1>შესვლა</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან გამოიყენეთ თქვენი ანგარიში</span>
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <a href="#">დაგავიწყდათ პაროლი?</a>
+                                <button>შესვლა</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signIn">შესვლა</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signUp">რეგისტრაცია</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/sms.svg">
+                    <p>შეტყობინება</p>
+                    <div id="message">
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/list.svg">
+                    <p>ჩემი სია</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="#" class="create-logo">
+                    <img src="assets/images/cart.svg">
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <p>კალათა</p>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <main class="userprof-cont">
+      <a  onclick="openNav()" href="#" class="cube openbtn">
+          <div class="mobile-sidebar" id="openbtnmenu" onclick="unvanishBtn()">
+            <i class="arrow right"></i>
+          </div>
+      </a>
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">
+          <div class="mobile-sidebarc" id="closebtnmenu" onclick="vanishBtn()">
+            <i class="arrow left"></i>
+          </div>
+        </a>
+        <div class="tab-mobile ">
+          <a class="tablinks">
+            <i class="fas fa-portrait"></i>
+            <p class="menu-txt">მომხმარებლის ID</p>
+            <p class="menu-numb">231321</p>
+          </a>
+          <a class="tablinks">
+            <i class="fas fa-plus"></i>
+            <p class="menu-txt">განცხადების დამატება</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myOffer')" id="defaultOpen">
+            <i class="far fa-list-alt"></i>
+            <p class="menu-txt">ჩემი განცხადებები</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myMessages')">
+            <i class="far fa-envelope"></i>
+            <p class="menu-txt">შეტყობინებები</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myBlackList')">
+            <i class="fas fa-user-lock"></i>
+            <p class="menu-txt">შავი სია</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myGroups')">
+            <i class="fas fa-users"></i>
+            <p class="menu-txt">მომხმარებლების ოთახი</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myList')">
+            <i class="far fa-star"></i>
+            <p class="menu-txt">ჩემი სია</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myBalance')">
+            <i class="fas fa-wallet"></i>
+            <p class="menu-txt">ბალანსის შევსება</p>
+            <p class="menu-numb">100.0 ₾</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myTransfers')">
+            <i class="fas fa-random"></i>
+            <p class="menu-txt">თანხის გადარიცხვა</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myTransactions')">
+            <i class="fas fa-exchange-alt"></i>
+            <p class="menu-txt">ტრანზაქციები</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myOrders')">
+            <i class="fas fa-cart-plus"></i>
+            <p class="menu-txt">ჩემი შეკვეთები</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myLocations')">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="menu-txt">ჩემი მისამართები</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myNews')">
+            <i class="fas fa-bell"></i>
+            <p class="menu-txt">სიახლეები ისტორია</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'mySettings')">
+            <i class="fas fa-wrench"></i>
+            <p class="menu-txt">ანგარიშის რედაქტირება</p>
+          </a>
+          <a class="tablinks" onclick="openMenu(event, 'myPassword')">
+            <i class="fas fa-key"></i>
+            <p class="menu-txt">პაროლის შეცვლა</p>
+          </a>
+        </div>
+      </div>  
+      <div class="tab ">
+        <a class="tablinks">
+          <i class="fas fa-portrait"></i>
+          <p class="menu-txt">მომხმარებლის ID</p>
+          <p class="menu-numb">231321</p>
+        </a>
+        <a class="tablinks">
+          <i class="fas fa-plus"></i>
+          <p class="menu-txt">განცხადების დამატება</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myOffer')" id="defaultOpen">
+          <i class="far fa-list-alt"></i>
+          <p class="menu-txt">ჩემი განცხადებები</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myMessages')">
+          <i class="far fa-envelope"></i>
+          <p class="menu-txt">შეტყობინებები</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myBlackList')">
+          <i class="fas fa-user-lock"></i>
+          <p class="menu-txt">შავი სია</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myGroups')">
+          <i class="fas fa-users"></i>
+          <p class="menu-txt">მომხმარებლების ოთახი</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myList')">
+          <i class="far fa-star"></i>
+          <p class="menu-txt">ჩემი სია</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myBalance')">
+          <i class="fas fa-wallet"></i>
+          <p class="menu-txt">ბალანსის შევსება</p>
+          <p class="menu-numb">100.0 ₾</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myTransfers')">
+          <i class="fas fa-random"></i>
+          <p class="menu-txt">თანხის გადარიცხვა</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myTransactions')">
+          <i class="fas fa-exchange-alt"></i>
+          <p class="menu-txt">ტრანზაქციები</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myOrders')">
+          <i class="fas fa-cart-plus"></i>
+          <p class="menu-txt">ჩემი შეკვეთები</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myLocations')">
+          <i class="fas fa-map-marker-alt"></i>
+          <p class="menu-txt">ჩემი მისამართები</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myNews')">
+          <i class="fas fa-bell"></i>
+          <p class="menu-txt">სიახლეები ისტორია</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'mySettings')">
+          <i class="fas fa-wrench"></i>
+          <p class="menu-txt">ანგარიშის რედაქტირება</p>
+        </a>
+        <a class="tablinks" onclick="openMenu(event, 'myPassword')">
+          <i class="fas fa-key"></i>
+          <p class="menu-txt">პაროლის შეცვლა</p>
+        </a>
+      </div>
+
+        <div id="myOffer" class="tabcontent">
+          <div class="myOffer">
+              <p>აქ იქნება რამე ტექსტი</p><br><p>აქ იქნება რამე ტექსტი</p>
+          </div>
+          <div>
+              <div class="active-button">
+                  <i class="far fa-star"></i>
+                  <p>აქტიური (0)</p>
+              </div>
+              <div class="add-button">
+                  <i class="fas fa-plus"></i>
+                  <p>დამატება</p>
+              </div>
+          </div>
+          <div class="myoffertable">
+            <table>
+              <tr>
+                <th>№</th>
+                <th>ფოტო</th>
+                <th>დასახელება , ID</th>
+                <th>ფასი</th>
+                <th>ნახვები</th>
+                <th>თარიღი</th>
+                <th>რეკლამირება</th>
+                <th>მოქმედება</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><div class="up-photo"></div></td>
+                <td><p>დასახელება</p><p>ID</p></td>
+                <td>100 ₾</td>
+                <td>100000</td>
+                <td>თარიღი</td>
+                <td>100 ₾</td>
+                <td><a href="#" class="myofferbut">ნახვა</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="myMessages" class="tabcontent">
+          <div class="messenger-container clearfix">
+            <div class="people-list" id="people-list">
+              <div class="search">
+                <input type="text" placeholder="ძებნა" />
+                <i class="fa fa-search"></i>
+              </div>
+              <ul class="list">
+                <li class="clearfix chat-people chat-active">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01.jpg" alt="avatar" />
+                  <div class="about">
+                    <div class="name">Vincent Porter</div>
+                    <div class="status">
+                      <i class="fa fa-circle online"></i> online
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="clearfix chat-people">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_02.jpg" alt="avatar" />
+                  <div class="about">
+                    <div class="name">Aiden Chavez</div>
+                    <div class="status">
+                      <i class="fa fa-circle offline"></i> left 7 mins ago
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="chat">
+              <div class="chat-header clearfix">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_01_green.jpg" alt="avatar" />
+                
+                <div class="chat-about">
+                  <div class="chat-with">Chat with Vincent Porter</div>
+                  <div class="chat-num-messages">already 1 902 messages</div>
+                </div>
+                <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              </div> <!-- end chat-header -->
+              
+              <div class="chat-history">
+                <ul>
+                  <li class="clearfix">
+                    <div class="message-data align-right">
+                      <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
+                      <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+                      
+                    </div>
+                    <div class="message other-message float-right">
+                      Hi Vincent, how are you? How is the project coming along?
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="message-data">
+                      <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                      <span class="message-data-time">10:12 AM, Today</span>
+                    </div>
+                    <div class="message my-message">
+                      Are we meeting today? Project has been already finished and I have results to show you.
+                    </div>
+                  </li>
+                  
+                  <li class="clearfix">
+                    <div class="message-data align-right">
+                      <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+                      <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+                      
+                    </div>
+                    <div class="message other-message float-right">
+                      Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="message-data">
+                      <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                      <span class="message-data-time">10:20 AM, Today</span>
+                    </div>
+                    <div class="message my-message">
+                      Actually everything was fine. I'm very excited to show this to our team.
+                    </div>
+                  </li>                  
+                </ul>
+                
+              </div> <!-- end chat-history -->
+              
+              <div class="chat-message clearfix">
+                <div class="chat-textarea">
+                    <textarea name="message-to-send" id="message-to-send" placeholder ="შეყობინების გაგზავნა" rows="3"></textarea> 
+                    <button><img src="assets/images/paperplane.svg"></button>
+                </div>
+              </div> <!-- end chat-message -->
+            </div> <!-- end chat -->
+          </div> <!-- end messenger-container -->
+        </div>
+
+        <div id="myBlackList" class="tabcontent">
+          <div class="mybltable">
+            <table>
+              <tr>
+                <th>№</th>
+                <th>დასახელება , ID</th>
+                <th>თარიღი</th>
+                <th>მოქმედება</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><p>დასახელება</p><p>ID</p></td>
+                <td>თარიღი</td>
+                <td><a href="#" class="myofferbut">ბლოკის მოხსნა</a></td>
+              </tr>
+            </table>
+          </div>
+          <div class="bl-alert">
+            <p>სიაში დამატებულ ადამიანებთან შეზღუდული გექნებათ მიმოწერის ფუნქცია</p>
+          </div>
+        </div>
+
+        <div id="myGroups" class="tabcontent">
+            <div class="dib">
+                <div class="group-box1">
+                    <h2>ჯგუფის შექმნის შესახებ</h2>
+                    <hr>
+                    <p>
+                        საიტი შესაძლებლობას გაძლევთ შექმნათ ჯგუფი, სადაც შეძლებთ განუსაზღვრელი რაოდენობით მომხმარებლების დამატებას და გაერთანებას მათი თანხმობის შემთხვევაში.
+                    </p>
+                    <p>
+                        ჯგუფში შეგიძლიათ გააერთანოთ როგორც თქვენი მეგობრები, ასევე საიტის სხვა მომხმარებლებიც, რაც საშუალებას მოგცემთ მეტად გაიმარტივოთ შესყიდვის პროცესი.
+                    </p>
+                </div>
+                <div class="group-box2">
+                    <h2>ჯგუფის შექმნა</h2>
+                    <hr>
+                    <label>მფლობელის (ელ.ფოსტა)</label>
+                    <br>
+                    <input type="text" name="">
+                    <br>
+                    <label>ჯგუფის დასახელება</label>
+                    <br>
+                    <input type="text" name="">
+                    <br>
+                    <div><a href="#">ჯგუფის შექმნა</a></div>
+                </div>
+            </div>
+            <div class="dib">
+                <div class="group-box1">
+                    <h2>ჯგუფში გაწევრიანების შესახებ</h2>
+                    <hr>
+                    <p>
+                        მომხმარებლის ნებისმიერ მომხმარებლების ჯგუფში დასამატებლად მიუთითე სასურველი ჯგუფის მფლობელის ელ.ფოსტა ან ჯგუფის უნიკალური ნომერი და დააჭირე ღილაკს "გაგზავნა".
+                    </p>
+                    <p>
+                        მას შემდეგ, რაც ჯგუფის მფლობელისგან მიიღებთ თანხმობას თქვენ გახდებით ჯგუფის წევრი.
+                    </p>
+                </div>
+                <div class="group-box2">
+                    <h2>ჯგუფში დამატება</h2>
+                    <hr>
+                    <label>ჯგუფის დასახელება</label>
+                    <br>
+                    <input type="text" name="">
+                    <br>
+                    <div><a href="#">გაგზავნა</a></div>
+                </div>
+            </div>
+            <div class="group-boxes-cont">
+                <h2>ჩემი შექმნილი ჯგუფები</h2>
+                <hr>
+                <div class="group-boxes">
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="seemorebut"><button><a href="#">მეტის ნახვა</a></button></div>
+            </div>
+            <div class="group-boxes-cont">
+                <h2>ჩემი ჯგუფები</h2>
+                <hr>
+                <div class="group-boxes">
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h3>ჯგუფის დასახელება</h3>
+                        <p>#2131231</p>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="seemorebut"><button><a href="#">მეტის ნახვა</a></button></div>
+            </div>
+            
+        </div>
+
+        <div id="myList" class="tabcontent">
+          <div class="mylisttable">
+            <table>
+              <tr>
+                <th>№</th>
+                <th>ფოტო</th>
+                <th>დასახელება , ID</th>
+                <th>შესავსებად</th>
+                <th>ფასი</th>
+                <th>რაოდენობა</th>
+                <th>მოქმედება</th>
+                <th><input type="checkbox" name=""></th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td><div class="up-photo"></div></td>
+                <td><p>დასახელება</p><p>ID</p></td>
+                <td>100</td>
+                <td>100 ₾</td>
+                <td>
+                    <div class="myl-quantity">
+                        <a href="#">
+                            <i class="fas fa-minus"></i>
+                        </a>
+                        <div><input class="quantity-field" type="text" name=""></div>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </td>
+                <td><a href="#" class="myofferbut">ყიდვა</a></td>
+                <td><input type="checkbox" name=""></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="myBalance" class="tabcontent">
+            <div class="balance-cont">
+                <p>ბალანსის შევსება ბარათით</p>
+                <div class="user-payment-method">
+                    <img src="assets/images/payment-method.png">
+                </div>
+                <div class="inpbalance">
+                    <input type="number" min="0" name="balance" placeholder="თანხა">
+                    <a href="#">შევსება</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myTransfers" class="tabcontent">
+            <div class="form-cont">
+            <form class="mytransfer">
+                <label>მომხმარებლის ელ.ფოსტა ან ID</label>
+                <br>
+                <input type="text" name="userID">
+                <br>
+                <label>მომხმარებლი</label>
+                <br>
+                <input type="text" name="userID">
+                <br>
+                <label>გადასარიცხი თანხა</label>
+                <br>
+                <input type="number" min="0" name="userID">
+                <br>
+                <label>პაროლი</label>
+                <br>
+                <input type="password" name="userID" autocomplete="off">
+                <br>
+                <input id="balancesubmit" type="submit" value="თანხის გადარიცხვა">
+            </form>
+            </div>
+        </div>
+
+        <div id="myTransactions" class="tabcontent">
+            <div class="transactmenu">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="trsearch" placeholder="ძებნა">
+                </div>
+                <div>
+                    <select>
+                        <option>ტრანზაციის ტიპი</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="calendar" type="date" name="firstdate">
+                </div>
+                <div>
+                    <input id="calendar" type="date" name="lastdate">
+                </div>
+            </div>
+            <div class="myloctable" id="trans">
+                <table>
+                  <tr>
+                    <th>№</th>
+                    <th>ტრანზაქციის ტიპი</th>
+                    <th>დასახელება, ID</th>
+                    <th>საწყისი თანხა</th>
+                    <th>თანხა</th>
+                    <th>საბოლოო თანხა</th>
+                    <th>თარიღი</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>პირადი გადარიცხვა</div></td>
+                    <td>დასახელება<br>131321</td>
+                    <td>100 ₾</td>
+                    <td>100 ₾</td>
+                    <td>100 ₾</td>
+                    <td>თარიღი</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="myOrders" class="tabcontent">
+            <div class="transactmenu">
+                <div>
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="trsearch" placeholder="ძებნა">
+                </div>
+                <div>
+                    <select>
+                        <option>ტრანზაციის ტიპი</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="calendar" type="date" name="firstdate">
+                </div>
+                <div>
+                    <input id="calendar" type="date" name="lastdate">
+                </div>
+            </div>
+            <div class="myloctable" id="trans">
+                <table>
+                  <tr>
+                    <th>№</th>
+                    <th>ფოტო</th>
+                    <th>დასახელება , ID</th>
+                    <th>კოდი</th>
+                    <th>ფასი</th>
+                    <th>რაოდენობა</th>
+                    <th>თარიღი</th>
+                    <th>სტატუსი</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><div class="up-photo"></div></td>
+                    <td><p>დასახელება</p><p>ID</p></td>
+                    <td>#10211</td>
+                    <td>100 ₾</td>
+                    <td>1000</td>
+                    <td>თარიღი</td>
+                    <td>აქტიური</td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="myLocations" class="tabcontent">
+          <div>
+              <a href="#" class="add-button">
+                  <i class="fas fa-plus"></i>
+                  <p>დამატება</p>
+              </a>
+          </div>
+          <div class="myloctable">
+            <table>
+              <tr>
+                <th>№</th>
+                <th>სახელი გვარი/<br>ორგანიზაციის დასახელება</th>
+                <th>პირადი ნომერი/<br>საკადასტრო კოდი</th>
+                <th>მისამართი</th>
+                <th>ტელეფონი</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>კარლო თევზაძე</div></td>
+                <td>37001884484</td>
+                <td>თამარ თავაძე 24</td>
+                <td>597118175</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="myNews" class="tabcontent">
+            <div class="myNewsgr">
+              <p>აქ იქნება რამე ტექსტი</p><br><p>აქ იქნება რამე ტექსტი</p>
+            </div>
+            <div class="myNewsrd">
+              <p>აქ იქნება რამე ტექსტი</p><br><p>აქ იქნება რამე ტექსტი</p>
+            </div>
+            <div class="myNewsgrn">
+              <p>აქ იქნება რამე ტექსტი</p><br><p>აქ იქნება რამე ტექსტი</p>
+            </div>
+            <div class="myNewsrd">
+              <p>აქ იქნება რამე ტექსტი</p><br><p>აქ იქნება რამე ტექსტი</p>
+            </div>
+        </div>
+
+        <div id="mySettings" class="tabcontent">
+            <div class="setting-box1">
+                <p>მომხმარებელი (ელ.ფოსტა)</p>
+                <p>სახელი</p>
+                <p>გვარი</p>
+                <p>ტელეფონი</p>
+                <p>დაბადების თარიღი</p>
+                <p>სქესი</p>
+                <p>პროფილის ფოტო</p>
+            </div>
+            <div class="setting-box2">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="date" name="">
+                <select>
+                    <option>სქესი</option>
+                    <option>ქალი</option>
+                    <option>მამაკაცი</option>
+                </select>
+                <div onclick="document.getElementById('fileInput').click();" class="photo-upload tm-product-img-dummy tm-upload-icon mx-auto">
+                    <img src="assets/images/upload.svg">
+                </div>
+                <div class="custom-file mt-3 mb-3">
+                  <input id="fileInput" type="file"/>
+                </div>
+                <a href="#" class="save-up">შენახვა</a>
+            </div>
+        </div>
+
+        <div id="myPassword" class="tabcontent">
+            <div class="form-cont">
+            <form class="mytransfer">
+                <label>ძველი პაროლი</label>
+                <br>
+                <input type="password" name="oldpass">
+                <br>
+                <label>ახალი პაროლი</label>
+                <br>
+                <input type="password" name="newpassw">
+                <br>
+                <label>გაიმეორეთ პაროლი</label>
+                <br>
+                <input type="password" name="repeatpass">
+                <br>
+                <input id="balancesubmit" type="submit" value="პაროლის შეცვლა">
+            </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+            <div class="footer">
+                    <div class="contain">
+                    <div class="col">
+                            <h3>გაზიარდი</h3>
+                    </div>
+                    <div class="col">
+                            <h3>კატეგორიები</h3>
+                            <ul>
+                                    <a href="categories.html"><li>გაყიდვა</li></a>
+                                    <a href="pubg-championship.html"><li>გაქირავება</li></a>
+                                    <a href="matches.html"><li>მომსახურება</li></a>
+                            </ul>
+                    </div>
+                    <div class="col">
+                            <h3>დახმარება</h3>
+                            <ul>
+                                    <li>მხარდაჭერა</li>
+                                    <li>FAQ</li>
+                            </ul>
+                    </div>
+                    <div class="col">
+                            <h3>კომპანია</h3>
+                            <ul>
+                                    <li>ჩვენი გუნდი</li>
+                                    <li>შესახებ</li>
+                                    <li>კონტაქტი</li>
+                                    <li>მოგვწერეთ</li>
+                            </ul>
+                    </div>
+                    <div class="col social">
+                            <h3>გამოგვყევით</h3>
+                            <ul>
+                                    <a href="www.facebook.com"><li><img src="assets/images/Facebook.svg" alt="facebook"></li></a>
+                                    <a href="www.instagram.com"><li><img src="assets/images/instagram.svg" alt="instagram"></li></a>
+                                    <a href="www.twitter.com"><li><img src="assets/images/twitter.svg" alt="twitter"></li></a>
+                            </ul>
+                            <div class="subscribe-field">
+                                <input type="text" autocomplete="off" placeholder="გამოიწერე" name="subscribe">
+                                <a href="#">
+                                    <img style="margin:12px;" src="assets/images/send-mail.svg">
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+            </div>
+            <hr>
+            <div class="copyright">Copyright © 2010-2020 Freepik Company S.L. All rights reserved.</div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/addoffer.js"></script>
+    <script type="text/javascript" src="assets/js/userprofilemenu.js"></script>
+    <script type="text/javascript" src="assets/js/chat.js"></script>
+    <script type="text/javascript" src="assets/js/registr.js"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<!--hamburger-->
+  
+<script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+  function vanishBtn() {
+    document.getElementById("closebtnmenu").style.display = "none";
+  }
+  function unvanishBtn() {
+    document.getElementById("closebtnmenu").style.display = "block"
+  }
+</script>
+
+
+<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+    <div class="message-data align-right">
+      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+      <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+      {{messageOutput}}
+    </div>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <div class="message-data">
+      <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+      <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+      {{response}}
+    </div>
+  </li>
+</script>
+
+   
+</body>
+</html> 

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GAAZIARE</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="assets/images/logo.svg" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+       
+        <!-- Template Stylesheet -->
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <header>
+        <!-- <div class="info-head">
+            <div class="num-gmail">
+                <img src="assets/images/phone.svg">
+                <p>+995-597-11-81-75</p>
+                <img src="assets/images/gmail.svg">
+                <p>Gaziardi.ltd@gmail.com</p>
+            </div>
+            <div class="head-login">
+                <img src="assets/images/avatar.svg">
+                <a href="#"><p>შესვლა</p></a>
+                <div class="divideline"></div>
+                <a href="#"><p>რეგისტრაცია</p></a>
+                <div class="flag">
+                    <img src="">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="main-header">
+            <div class="logoandsearch">
+                <a href="index.html">          
+                    <img class="logo" src="assets/images/logo.svg">
+                </a>         
+                
+                <div class="search-field">
+                    <input type="text" name="search">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="user-tools">
+                <a href="#" id="myBtn" class="create-logo">
+                    <img src="assets/images/create.svg">
+                    <p>შექმნა</p>
+                </a>
+
+                <div id="myModal" class="modal">
+
+                    <div class="crt-box-post">
+                        <div class="modal-content-close">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="createoffer">
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაყიდვა</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაქირავება</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>მომსახურება</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" id="myloginBtn" class="create-logo">
+                    <img src="assets/images/user.svg">
+                    <p>შესვლა</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+
+                <div id="myloginModal" class="modallogin">
+                    <div class="container-regi" id="container">
+                        <div class="form-container sign-up-container">
+                            <form class="regist-form" action="#">
+                                <h1>რეგისტრაცია</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან შექმენით დამოუკიდებელი ანგარიში</span>
+                                <input type="text" placeholder="სახელი" />
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <button>რეგისტრაცია</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="regist-form" action="#">
+                                <h1>შესვლა</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან გამოიყენეთ თქვენი ანგარიში</span>
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <a href="#">დაგავიწყდათ პაროლი?</a>
+                                <button>შესვლა</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signIn">შესვლა</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signUp">რეგისტრაცია</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/sms.svg">
+                    <p>შეტყობინება</p>
+                    <div id="message">
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/list.svg">
+                    <p>ჩემი სია</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="#" class="create-logo">
+                    <img src="assets/images/cart.svg">
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <p>კალათა</p>
+                </a>
+            </div>
+
+        </div>
+    </header>
+        <!-- Product List Start -->
+        <div class="product-view">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="product-view-top">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="product-search">
+                                                <input type="email" value="Search">
+                                                <button><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-short">
+                                                <div class="dropdown">
+                                                    <div class="dropdown-toggle" data-toggle="dropdown">Product short by</div>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a href="#" class="dropdown-item">Newest</a>
+                                                        <a href="#" class="dropdown-item">Popular</a>
+                                                        <a href="#" class="dropdown-item">Most sale</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-price-range">
+                                                <div class="dropdown">
+                                                    <div class="dropdown-toggle" data-toggle="dropdown">Product price range</div>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a href="#" class="dropdown-item">$0 to $50</a>
+                                                        <a href="#" class="dropdown-item">$51 to $100</a>
+                                                        <a href="#" class="dropdown-item">$101 to $150</a>
+                                                        <a href="#" class="dropdown-item">$151 to $200</a>
+                                                        <a href="#" class="dropdown-item">$201 to $250</a>
+                                                        <a href="#" class="dropdown-item">$251 to $300</a>
+                                                        <a href="#" class="dropdown-item">$301 to $350</a>
+                                                        <a href="#" class="dropdown-item">$351 to $400</a>
+                                                        <a href="#" class="dropdown-item">$401 to $450</a>
+                                                        <a href="#" class="dropdown-item">$451 to $500</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="margin-bottom: 50px;">
+                                <div class="product-item">
+                                    <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                                    <div class="product-action">
+                                        <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                        <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="ratting">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>BMXC 2018 Android 7.0 OS 10 </p>
+                                <p>1000/500</p>
+                                <p>1000₾/Piece</p>
+                                <p>100 Piece (MOQ)</p>
+                                <div id="progress" style="height:20px">
+                                        <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                                </div>
+                            </div>                      
+                        </div>
+                        
+                        <!-- Pagination Start -->
+                        <div class="col-md-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Pagination Start -->
+                    </div>           
+                    
+                    <!-- Side Bar Start -->
+                  
+                    <!-- Side Bar End -->
+                </div>
+            </div>
+        </div>
+        <!-- Product List End -->  
+        <!-- Featured Product Start -->
+        <div class="featured-product product">
+            <div class="container-fluid carouselprood">
+                <div class="prodCarousel">
+                    <div class="prodCarou">
+                        <p>ბოლოს დამატებული</p>
+                        <button>საუკეთესო ფასი</button>
+                        <button>მოთხოვნადი</button>
+                    </div>
+                    <a href="#" style="float: right;">
+                        ყველა (12)
+                    </a>
+                </div>
+                <div class="prodCarou-mob">
+                    <button>საუკეთესო ფასი</button>
+                    <button>მოთხოვნადი</button>
+                </div>
+                <hr>
+                <div class="row align-items-center product-slider product-slider-4">
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Product End -->       
+        
+        <footer>
+                <div class="footer">
+                        <div class="contain">
+                        <div class="col">
+                                <h3>გაზიარდი</h3>
+                        </div>
+                        <div class="col">
+                                <h3>კატეგორიები</h3>
+                                <ul>
+                                        <a href="#"><li>გაყიდვა</li></a>
+                                        <a href="#"><li>გაქირავება</li></a>
+                                        <a href="#"><li>მომსახურება</li></a>
+                                </ul>
+                        </div>
+                        <div class="col">
+                                <h3>დახმარება</h3>
+                                <ul>
+                                        <a href="FAQ.html"><li>მხარდაჭერა</li></a>
+                                        <a href="FAQ.html"><li>FAQ</li></a>
+                                </ul>
+                        </div>
+                        <div class="col">
+                                <h3>კომპანია</h3>
+                                <ul>
+                                        <a href="aboutus.html"><li>ჩვენი გუნდი</li></a>
+                                        <a href="aboutus.html"><li>შესახებ</li></a>
+                                        <a href="aboutus.html"><li>კონტაქტი</li></a>
+                                        <a href="aboutus.html"><li>მოგვწერეთ</li></a>
+                                </ul>
+                        </div>
+                        <div class="col social">
+                                <h3>გამოგვყევით</h3>
+                                <ul>
+                                        <a href="www.facebook.com"><li><img src="assets/images/Facebook.svg" alt="facebook"></li></a>
+                                        <a href="www.instagram.com"><li><img src="assets/images/instagram.svg" alt="instagram"></li></a>
+                                        <a href="www.twitter.com"><li><img src="assets/images/twitter.svg" alt="twitter"></li></a>
+                                </ul>
+                                <div class="subscribe-field">
+                                    <input type="text" autocomplete="off" placeholder="გამოიწერე" name="subscribe">
+                                    <a href="#">
+                                        <img src="assets/images/send-mail.svg">
+                                    </a>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+                <hr>
+                <div class="copyright">Copyright © 2010-2020 Freepik Company S.L. All rights reserved.</div>
+    </footer>
+        <!-- JavaScript Libraries -->
+        <script type="text/javascript" src="assets/js/addoffer.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/registr.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

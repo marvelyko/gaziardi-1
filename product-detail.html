@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>GAAZIARE</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="assets/images/logo.svg" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+       
+        <!-- Template Stylesheet -->
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/610e68a838.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+        
+    
+    </head>
+
+    <body>
+        <header>
+        <!-- <div class="info-head">
+            <div class="num-gmail">
+                <img src="assets/images/phone.svg">
+                <p>+995-597-11-81-75</p>
+                <img src="assets/images/gmail.svg">
+                <p>Gaziardi.ltd@gmail.com</p>
+            </div>
+            <div class="head-login">
+                <img src="assets/images/avatar.svg">
+                <a href="#"><p>შესვლა</p></a>
+                <div class="divideline"></div>
+                <a href="#"><p>რეგისტრაცია</p></a>
+                <div class="flag">
+                    <img src="">
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="main-header">
+            <div class="logoandsearch">
+                <a href="index.html">          
+                    <img class="logo" src="assets/images/logo.svg">
+                </a>         
+                
+                <div class="search-field">
+                    <input type="text" name="search">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="user-tools">
+                <a href="#" id="myBtn" class="create-logo">
+                    <img src="assets/images/create.svg">
+                    <p>შექმნა</p>
+                </a>
+
+                <div id="myModal" class="modal">
+
+                    <div class="crt-box-post">
+                        <div class="modal-content-close">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="createoffer">
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაყიდვა</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>გაქირავება</p>
+                                </div>
+                            </a>
+                            <a href="add-offer.html">
+                                <div class="typeoffer">
+                                    <p>მომსახურება</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" id="myloginBtn" class="create-logo">
+                    <img src="assets/images/user.svg">
+                    <p>შესვლა</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+
+                <div id="myloginModal" class="modallogin">
+                    <div class="container-regi" id="container">
+                        <div class="form-container sign-up-container">
+                            <form class="regist-form" action="#">
+                                <h1>რეგისტრაცია</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან შექმენით დამოუკიდებელი ანგარიში</span>
+                                <input type="text" placeholder="სახელი" />
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <button>რეგისტრაცია</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form class="regist-form" action="#">
+                                <h1>შესვლა</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                                <span>ან გამოიყენეთ თქვენი ანგარიში</span>
+                                <input type="email" placeholder="ელ. ფოსტა" />
+                                <input type="password" placeholder="პაროლი" />
+                                <a href="#">დაგავიწყდათ პაროლი?</a>
+                                <button>შესვლა</button>
+                            </form>
+                        </div>
+                        <div class="overlay-container">
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signIn">შესვლა</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <img src="assets/images/main-logo.svg">
+                                    <p>გაიარეთ ავტორიზაცია და მიიღეთ წვდომა ყველა სერვისზე <b>უფასოდ</b></p>
+                                    <button class="ghost" id="signUp">რეგისტრაცია</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/sms.svg">
+                    <p>შეტყობინება</p>
+                    <div id="message">
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="userprofile.html" class="create-logo">
+                    <img src="assets/images/list.svg">
+                    <p>ჩემი სია</p>
+                    <div>
+                        <p>0</p>
+                    </div>
+                </a>
+                <a href="#" class="create-logo">
+                    <img src="assets/images/cart.svg">
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <p>კალათა</p>
+                </a>
+            </div>
+
+        </div>
+    </header>
+        
+        
+        <!-- Product Detail Start -->
+        <div class="product-detail">
+            <div class="container-fluid">
+                <div class="product-section">
+                    <div class="product-images">
+                        <div class="pr-img-container">
+                          <div class="pr-img-mySlides">
+                            <img id="myimage" src="assets/images/honey.jpg">
+                          </div>
+
+                          <div class="pr-img-mySlides">
+                            <img id="myimage2" src="assets/images/honey.jpg">
+                          </div>
+
+                          <div class="pr-img-mySlides">
+                            <img id="myimage3" src="assets/images/honey.jpg">
+                          </div>
+                            
+                          <div class="pr-img-mySlides">
+                            <img id="myimage4" src="assets/images/honey.jpg">
+                          </div>
+
+                          <div class="pr-img-mySlides">
+                            <img id="myimage5" src="assets/images/honey.jpg">
+                          </div>
+                            
+                          <div class="pr-img-mySlides">
+                            <img id="myimage6" src="assets/images/honey.jpg">
+                          </div>
+                            
+                          <a class="pr-img-prev" onclick="plusSlides(-1)">❮</a>
+                          <a class="pr-img-next" onclick="plusSlides(1)">❯</a>
+
+                          
+
+                          <div class="pr-img-row">
+                            <div class="pr-img-column">
+                              <img class="pr-img-demo pr-img-cursor" src="assets/images/honey.jpg" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="pr-img-column">
+                              <img class="pr-img-demo pr-img-cursor" src="assets/images/honey.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                            </div>
+                            <div class="pr-img-column">
+                              <img class="pr-img-demo pr-img-cursor" src="assets/images/honey.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="pr-img-column">
+                              <img class="pr-img-demo pr-img-cursor" src="assets/images/honey.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="pr-img-column">
+                              <img class="pr-img-demo pr-img-cursor" src="assets/images/honey.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+                            </div>    
+                            <div class="pr-img-column">
+                              <img class="pr-img-demo pr-img-cursor" src="assets/images/honey.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="product-information">
+                        <h1>Lenovo P8 Tab3 8 plus TB - 8703F 8.0 inch</h1>
+                        <div class="ratingbox">
+                          <input type="radio" name="rating" id="rating-1" value="1"/>
+                          <label for="rating-1" class="fa fa-star"></label>
+                          <input type="radio" name="rating" id="rating-2" value="2"/>
+                          <label for="rating-2" class="fa fa-star"></label>
+                          <input type="radio" name="rating" id="rating-3" value="3"/>
+                          <label for="rating-3" class="fa fa-star"></label>
+                          <input type="radio" name="rating" id="rating-4" value="4"/>
+                          <label for="rating-4" class="fa fa-star"></label>
+                          <input type="radio" name="rating" id="rating-5" value="5"/>
+                          <label for="rating-5" class="fa fa-star"></label>
+                        </div>
+                        <p class="pi-user-rate"><span>(1)</span> მომხმარებლის შეფასება</p>
+                        <div class="product-loc-time">
+                            <p class="plt-condition">ახალი</p>
+                            <div>
+                                <div class="only-loc-view">
+                                    <i class="plt-icon fas fa-globe-europe"></i>
+                                    <p class="plt-loc">თბილისი</p>
+                                    <i class="plt-icon fas fa-eye"></i>
+                                    <p class="plt-view">21312</p>
+                                </div>
+                                <div>
+                                    <p class="plt-id">ID: <span>12313</span></p>
+                                    <i class="plt-icon fas fa-clock"></i>
+                                    <p class="plt-timing">11/02/2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer-data">
+                            <p>შეთავაზება: <span>1000</span></p>
+                            <p>შესავსებად: <span>1000</span></p>
+                            <p>მინიმალური შეკვეთა: <span>1000</span></p>
+                        </div>
+                        <div class="plt-price">
+                            <p>131.22</p>
+                            <div class="valute-btn">
+                                <button type="button" class="btn btn-sm btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                    <div class="handle"></div>
+                                </button>
+                            </div>
+                        </div>  
+                        <div class="quantity">
+                            <div class="qty">
+                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
+                                <input type="text" value="1">
+                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>  
+                        <div class="plt-purchase">
+                            <button class="plt-cart">
+                                კალათა
+                            </button>
+                            <button class="plt-buy">
+                                ყიდვა
+                            </button>
+                        </div>    
+                    </div>
+                    <div class="product-owner">
+                        <h1>შეთავაზების ავტორი</h1>
+                        <div class="offer-author">
+                            <img src="assets/images/avatar.svg">
+                            <p>კარლო თევზაძე</p>
+                            <button class="author-numb">597-118-175</button>
+                            <div class="private-call-message">
+                                <button>
+                                    <i class="fas fa-mobile-alt"></i>
+                                </button>
+                                <button>
+                                    <i class="fas fa-comment-dots"></i>
+                                </button>
+                            </div>
+                            <a href="#">სხვა შეთავაზებები</a>
+                        </div>
+                        <div class="gamziareblebi">
+                            <h1>გაზიარებით დაინტერესებულია</h2>
+                            <div class="gamziareblebi-list">
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <div data-title="მომხმარებლის სახელი">
+                                    <img src="assets/images/honey.jpg" alt="user profile picture">
+                                </div>
+                                <button>მეტი</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="row product-detail-bottom">
+                    <div class="col-lg-12" id="col-lg-12">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#description">აღწერა</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#specification">მახასიათებლები</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#reviews">კომენტარები (1)</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="description" class="container tab-pane active">
+                                <h4>აღწერა:</h4>
+                                <p>
+                                    პროდუქტი არის ახალი. ვებგვერდი — საიტის შემადგენელი ნაწილი. იგი წარმოადგენს ინფორმაციის წყაროს და შეიცავს ჰიპერტექსტებს, რომელთა საშუალებითაც ხდება სხვადასხვა დოკუმენტის მოძიება და კავშირი.[1] ყველაზე ხშირად საიტი დაწერილია HTML ან XHTML ვებ პროგრამირების ენაზე და ხელმისაწვდომია ვებბრაუზერის საშუალებით.
+                                </p>
+                            </div>
+                            <div id="specification" class="container tab-pane fade">
+                                <h4>პროდუქტის მახასიათებლები:</h4>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                </ul>
+                            </div>
+                            <div id="reviews" class="container tab-pane fade">
+                                <div class="reviews-submitted">
+                                    <div class="user-comment-disp">
+                                        <div class="user-pic-com">
+                                            <img src="assets/images/honey.jpg">
+                                        </div>
+                                        <div class="user-com-block">
+                                            <div class="reviewer">თენგიზ პატარაია - <span>01 იან 2020</span></div>
+                                            <div class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>
+                                                მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.
+                                            </p>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    <br>
+                                    <div class="user-comment-disp">
+                                        <div class="user-pic-com">
+                                            <img src="assets/images/honey.jpg">
+                                        </div>
+                                        <div class="user-com-block">
+                                            <div class="reviewer">თენგიზ პატარაია - <span>01 იან 2020</span></div>
+                                            <div class="ratting">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p>
+                                                მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.მოიწვიეთ მეგობრები, რადგან მალე შევავსოთ შეკვეთა. მე ჩემი 3 მეგობარი მოვიწვიე უკვე.
+                                            </p>
+                                        </div>
+                                        
+
+
+                                    </div>
+                                    
+                                </div>
+                                <div class="reviews-submit">
+                                    <div class="review-ratee">
+                                    <h4>შეაფასეთ:</h4>
+                                    <div class="ratingbox">
+                                      <input type="radio" name="rating" id="rating-1" value="1"/>
+                                      <label for="rating-1" class="fa fa-star"></label>
+                                      <input type="radio" name="rating" id="rating-2" value="2"/>
+                                      <label for="rating-2" class="fa fa-star"></label>
+                                      <input type="radio" name="rating" id="rating-3" value="3"/>
+                                      <label for="rating-3" class="fa fa-star"></label>
+                                      <input type="radio" name="rating" id="rating-4" value="4"/>
+                                      <label for="rating-4" class="fa fa-star"></label>
+                                      <input type="radio" name="rating" id="rating-5" value="5"/>
+                                      <label for="rating-5" class="fa fa-star"></label>
+                                    </div>
+                                    </div>
+                                    <div class="row form">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="სახელი">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" placeholder="ელ.ფოსტა">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <textarea placeholder="კომენტარი"></textarea>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <button>გაგზავნა</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Product Detail End -->
+         <!-- Featured Product Start -->
+        <div class="featured-product product">
+            <div class="container-fluid carouselprood">
+                <div class="prodCarousel">
+                    <div class="prodCarou">
+                        <p>ბოლოს დამატებული</p>
+                        <button>საუკეთესო ფასი</button>
+                        <button>მოთხოვნადი</button>
+                    </div>
+                    <a href="#" style="float: right;">
+                        ყველა (12)
+                    </a>
+                </div>
+                <div class="prodCarou-mob">
+                    <button>საუკეთესო ფასი</button>
+                    <button>მოთხოვნადი</button>
+                </div>
+                <hr>
+                <div class="row align-items-center product-slider product-slider-4">
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product-item">
+                            <img src="assets/images/honey.jpg" style="height: 200px; width: 100%; background-color: #009797;">
+                            <div class="product-action">
+                                <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                <a href="product-detail.html"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>BMXC 2018 Android 7.0 OS 10 </p>
+                        <p>1000/500</p>
+                        <p>1000₾/Piece</p>
+                        <p>100 Piece (MOQ)</p>
+                        <div id="progress" style="height:20px">
+                                <div class="progress-bar progress-bar-striped" style="width:50%; height:20px">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Product End -->
+        
+    <footer>
+                <div class="footer">
+                        <div class="contain">
+                        <div class="col">
+                                <h3>გაზიარდი</h3>
+                        </div>
+                        <div class="col">
+                                <h3>კატეგორიები</h3>
+                                <ul>
+                                        <a href="#"><li>გაყიდვა</li></a>
+                                        <a href="#"><li>გაქირავება</li></a>
+                                        <a href="#"><li>მომსახურება</li></a>
+                                </ul>
+                        </div>
+                        <div class="col">
+                                <h3>დახმარება</h3>
+                                <ul>
+                                        <a href="FAQ.html"><li>მხარდაჭერა</li></a>
+                                        <a href="FAQ.html"><li>FAQ</li></a>
+                                </ul>
+                        </div>
+                        <div class="col">
+                                <h3>კომპანია</h3>
+                                <ul>
+                                        <a href="aboutus.html"><li>ჩვენი გუნდი</li></a>
+                                        <a href="aboutus.html"><li>შესახებ</li></a>
+                                        <a href="aboutus.html"><li>კონტაქტი</li></a>
+                                        <a href="aboutus.html"><li>მოგვწერეთ</li></a>
+                                </ul>
+                        </div>
+                        <div class="col social">
+                                <h3>გამოგვყევით</h3>
+                                <ul>
+                                        <a href="www.facebook.com"><li><img src="assets/images/Facebook.svg" alt="facebook"></li></a>
+                                        <a href="www.instagram.com"><li><img src="assets/images/instagram.svg" alt="instagram"></li></a>
+                                        <a href="www.twitter.com"><li><img src="assets/images/twitter.svg" alt="twitter"></li></a>
+                                </ul>
+                                <div class="subscribe-field">
+                                    <input type="text" autocomplete="off" placeholder="გამოიწერე" name="subscribe">
+                                    <a href="#">
+                                        <img src="assets/images/send-mail.svg">
+                                    </a>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+                <hr>
+                <div class="copyright">Copyright © 2010-2020 Freepik Company S.L. All rights reserved.</div>
+    </footer>
+    <!-- JavaScript Libraries -->
+    <script type="text/javascript" src="assets/js/addoffer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/registr.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/megamenu.js"></script>
+    <script type="text/javascript" src="assets/js/prod-img-slider.js"></script>
+    <script type="text/javascript" src="assets/js/img-magnifier.js"></script>
+    <script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("myimage", 3);
+magnify("myimage2", 3);
+</script>
+</body>
+</html>
